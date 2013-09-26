@@ -63,7 +63,7 @@
             <ul class="nav">
               <h3>Table of Contents</h3>
               {% for post in site.posts %}
-                <li><a href="/handbook/{{ post.url }}">{{ post.title }}</a></li>
+                <li><a href="/handbook{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </div><!--/.well -->
