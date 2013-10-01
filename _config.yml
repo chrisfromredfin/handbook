@@ -1,5 +1,6 @@
 name: Backdrop Handbook
 permalink: /:categories/:title/
+BASE_PATH: /handbook
 
 include: ['_pages']
 relative_permalinks: false
