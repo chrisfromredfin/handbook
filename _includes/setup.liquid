@@ -1,0 +1,5 @@
+{% if (site.safe) %}
+  {% assign BASE_PATH = site.base_path %}
+{% else %}
+  {% assign BASE_PATH = '/' %}
+{% endif %}
