@@ -1,13 +1,12 @@
 name: Backdrop Handbook
 permalink: /:categories/:title/
-BASE_PATH: /handbook
+
+# BASE_PATH is set to "/" in includes/setup.html if site.safe is FALSE.
+base_path: /handbook/
 
 include: ['_pages']
 relative_permalinks: false
 
-# maruku is used on Github pages itself. You may need to "gem install maruku" to
-# render pages correctly. We use maruku-specific syntax for generating table of
-# contents in pages. See http://maruku.rubyforge.org/maruku.html
 markdown: redcarpet
 pygments: true
 
