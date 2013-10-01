@@ -2,3 +2,6 @@ img.backdrop-logo {
   height: 22px;
   padding-right: 15px;
 }
+.sidebar-nav h3 {
+  margin-top: 0;
+}

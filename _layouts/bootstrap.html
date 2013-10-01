@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/handbook/components/bootstrap/assets/ico/favicon.png">
+    <link rel="shortcut icon" href="{{ BASE_PATH }}/components/bootstrap/assets/ico/favicon.png">
 
     <title>{{ page.title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/handbook/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ BASE_PATH }}/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/handbook/css/offcanvas.css" rel="stylesheet">
-    <link href="/handbook/css/styles.css" rel="stylesheet">
+    <link href="{{ BASE_PATH }}/css/offcanvas.css" rel="stylesheet">
+    <link href="{{ BASE_PATH }}/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="/handbook/components/bootstrap/assets/js/html5shiv.js"></script>
-      <script src="/handbook/components/bootstrap/assets/js/respond.min.js"></script>
+      <script src="{{ BASE_PATH }}/components/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="{{ BASE_PATH }}/components/bootstrap/assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
 
   <body>
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="navbar navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-          <img src="/handbook/img/backdrop-alone.png" alt="Backdrop Logo" class="backdrop-logo">{{ site.name }}</a>
+          <img src="{{ BASE_PATH }}/img/backdrop-alone.png" alt="Backdrop Logo" class="backdrop-logo">{{ site.name }}</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -58,12 +58,7 @@
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <div class="well sidebar-nav">
-            <ul class="nav">
-              <h3>Table of Contents</h3>
-              {% for post in site.posts %}
-                <li><a href="/handbook{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
+            {% include toc.html %}
           </div><!--/.well -->
         </div><!--/span-->
       </div><!--/row-->
@@ -81,7 +76,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/handbook/components/bootstrap/assets/js/jquery.js"></script>
-    <script src="/handbook/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ BASE_PATH }}/components/bootstrap/assets/js/jquery.js"></script>
+    <script src="{{ BASE_PATH }}/components/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
