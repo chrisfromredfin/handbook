@@ -12,7 +12,7 @@ Backdrop CMS started its existence as a fork of [Drupal](http://drupal.org). Alt
 
 The direction of Backdrop is guided by the Backdrop Project Management Committee (PMC). The individuals that make up the committee are often but not necessarily committers to the project code repository. Their mission is to ensure that Backdrop follows the ideals of the project philosophy. If needed, it is also within their power to change the project philosophy, by movement of a unanimous vote. The PMC handles any issue that has been escalated by one or more core committers or any issue at their discretion, at which time they will take a majority vote on the issue at hand.
 
-The PMC currently consists of members **Nate Haug** and **Jen Lampton**.
+The PMC currently consists of members [**Nate Haug**](https://github.com/quicksketch) and [**Jen Lampton**](https://github.com/jenlampton).
 
 Additional individuals may be added to the committee by a unanimous vote from the PMC. Individuals may be removed from the committee by a simple majority vote. In the event of a tie within the PMC, an elected member of the PMC may break the tie. The tie-breaker may be elected at any time by a majority vote of the committee.
 
